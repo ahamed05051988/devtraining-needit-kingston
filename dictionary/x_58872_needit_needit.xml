@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="AliasName" max_length="40" name="aliasname" type="string"/>
+        <element default="junk@servicenow.com" label="Email address" mandatory="true" max_length="255" name="email_address" read_only="true" type="string_full_utf8"/>
+        <element label="testing" max_length="40" name="testing" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Human Resources" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resource" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="regna reddy" sequence="1" value="regna reddy"/>
+                <element inactive_on_update="false" label="shafeeq" sequence="2" value="shafeeq"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="New Currency" max_length="20" name="u_currency_4" type="currency"/>
+        <element attributes="omit_sys_original=true" label="New Currency" max_length="20" name="u_currency_6" type="currency"/>
+        <element label="New Decimal" max_length="15" name="u_decimal_3" type="decimal"/>
+        <element label="New Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
+        <element attributes="edge_encryption_enabled=true" label="New Date" max_length="40" name="u_glide_date_2" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="New Date/Time" max_length="40" name="u_glide_date_time_7" type="glide_date_time"/>
+        <element label="New HTML" mandatory="true" max_length="65536" name="u_html_1" type="html"/>
+        <element label="New IP Address (Validated IPV4, IPV6)" max_length="40" name="u_ip_addr_5" type="ip_addr"/>
+        <element label="New Reference" mandatory="true" max_length="32" name="u_reference_3" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <index name="index">
+            <element name="u_reference_3"/>
+        </index>
+    </element>
+</database>
